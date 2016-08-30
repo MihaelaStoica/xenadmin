@@ -212,5 +212,11 @@ namespace XenAdmin.TabPages
         {
             Program.MainWindow.ShowPerConnectionWizard(connection, new PvsSiteDialog(connection));
         }
+
+        private void ConfigureButton_Click(object sender, EventArgs e)
+        {
+            using (PvsCacheConfigurationDialog dialog = new PvsCacheConfigurationDialog(connection))
+                dialog.ShowDialog(this);
+        }
     }
 }

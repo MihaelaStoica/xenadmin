@@ -196,6 +196,7 @@
             resources.ApplyResources(this.ConfigureButton, "ConfigureButton");
             this.ConfigureButton.Name = "ConfigureButton";
             this.ConfigureButton.UseVisualStyleBackColor = true;
+            this.ConfigureButton.Click += new System.EventHandler(this.ConfigureButton_Click);
             // 
             // ViewPvsSitesButton
             // 
